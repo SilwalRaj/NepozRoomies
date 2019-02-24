@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotPassActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/tvEmailConfirmlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tvFgtLoginlbl"
+            android:layout_marginTop="201dp"
+            android:text="Give your Registered Email ID"
+            android:textColor="#0182cc"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etEmailConfirm"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="249dp"
+            android:ems="10"
+            android:hint="Email Id"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@id/etEmailConfirm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:onClick="setEmailConfirm"
+            android:text="Submit"
+            android:textColor="#0182cc" />
+
+        <TextView
+            android:id="@+id/tvFgtLoginlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="84dp"
+            android:text="Give your Login ID."
+            android:textColor="#0182cc"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etFgtLogin"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="131dp"
+            android:ems="10"
+            android:hint="LoginId"
+            android:inputType="textPersonName"
+            android:text="" />
+    </RelativeLayout>
+</android.widget.RelativeLayout>

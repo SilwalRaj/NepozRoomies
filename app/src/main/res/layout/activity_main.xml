@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nepoz1"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="452dp"
+        android:layout_centerInParent="true"
+        android:background="#FFFFFF">
+
+        <EditText
+            android:id="@+id/etUserId"
+            android:layout_width="281dp"
+            android:layout_height="46dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.356"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.229" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="279dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="160dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.348"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPasswrd"
+            app:layout_constraintVertical_bias="0.034" />
+
+        <TextView
+            android:id="@+id/tvUsrId2"
+            android:layout_width="109dp"
+            android:layout_height="43dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/etUserId"
+            android:layout_marginTop="61dp"
+            android:text="LogIn ID"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toTopOf="@+id/etUserId"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.119"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.757" />
+
+        <TextView
+            android:id="@+id/tvPasswrd"
+            android:layout_width="152dp"
+            android:layout_height="38dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/etUserId"
+            android:layout_marginTop="189dp"
+            android:text="Password"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.143"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etUserId" />
+
+        <Button
+            android:id="@+id/btnLogIn"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/etUserId"
+            android:layout_marginBottom="93dp"
+            android:onClick="clickLogInbtn"
+            android:text="Log In"
+            android:textColor="@android:color/holo_blue_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.205"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword"
+            app:layout_constraintVertical_bias="0.102" />
+
+        <Button
+            android:id="@+id/btnForgotpass"
+            android:layout_width="179dp"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="33dp"
+            android:background="@null"
+            android:textColor="@android:color/holo_blue_light"
+            android:text="Forgot Password?"
+            android:onClick="forgotPassWord"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogIn"
+            app:layout_constraintVertical_bias="0.504" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnLogIn"
+            android:layout_alignEnd="@+id/etUserId"
+            android:background="@null"
+            android:onClick="clickSignUp"
+            android:text="Sign Up?"
+            android:textColor="@android:color/holo_blue_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.861"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogIn"
+            app:layout_constraintVertical_bias="0.0" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.myste.menubartest.MenuActivity">
+    <item
+        android:id="@+id/adPost"
+        android:title="Post Advertise"
+        app:showAsAction="never" />
+    <item android:id="@+id/Profile"
+        android:title="Profile"
+        app:showAsAction="never"/>
+    <item android:id="@+id/AdList"
+        android:title="Advertise List"
+        app:showAsAction="never"/>
+    <item android:id="@+id/Logout"
+        android:title="Log Out"
+        app:showAsAction="never"/>
+    <item android:id="@+id/RequestNotif"
+        android:icon="@drawable/notif"
+        app:showAsAction="always"
+        android:title="Notif"/>
+</menu>

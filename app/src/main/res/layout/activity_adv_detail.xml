@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdvDetailActivity">
+
+    <android.widget.RelativeLayout
+        android:id="@+id/adImagediv"
+        android:layout_width="wrap_content"
+        android:layout_height="235dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#58ACFA">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/adImagediv"
+            android:layout_alignStart="@+id/adImagediv"
+            android:layout_marginBottom="0dp"
+            android:background="#000000" />
+    </android.widget.RelativeLayout>
+
+    <android.widget.RelativeLayout
+        android:id="@+id/adDetail"
+        android:layout_width="match_parent"
+        android:layout_height="332dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/adImagediv"
+        android:background="@drawable/addetail">
+
+        <android.widget.RelativeLayout
+            android:layout_width="354dp"
+            android:layout_height="309dp"
+            android:layout_centerInParent="true"
+            android:background="#F0F3F4">
+
+            <TextView
+                android:id="@+id/tVSuburb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/iBtnFavorite"
+                android:layout_marginStart="10dp"
+                android:background="#ffffff"
+                android:text="TextView"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/tVSuburb"
+                android:layout_marginTop="45dp"
+                android:background="#ffffff"
+                android:text="TextView"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tVDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnRequest"
+                android:layout_alignStart="@+id/tVSuburb"
+                android:background="#ffffff"
+                android:text="TextView"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tVDesc"
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:layout_alignEnd="@+id/iBtnFavorite"
+                android:layout_alignStart="@+id/tVSuburb"
+                android:layout_below="@id/tVDate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:text="TextView"
+                android:textSize="16dp" />
+
+            <ImageButton
+                android:id="@+id/iBtnFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:onClick="AddFavorites"
+                app:srcCompat="@android:drawable/btn_star_big_off" />
+
+            <Button
+                android:id="@+id/btnRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/iBtnFavorite"
+                android:layout_below="@+id/tVAddress"
+                android:onClick="RequestForUnit"
+                android:text="Request" />
+
+            <TextView
+                android:id="@+id/tvRequestStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tVSuburb"
+                android:layout_below="@+id/tVDesc"
+                android:background="#ffffff"
+                android:text="Request Status: N/A"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btnEditAdv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tVDesc"
+                android:layout_below="@+id/tVAddress"
+                android:onClick="editInfo"
+                android:text="Edit"
+                android:textColor="#3498DB"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tVDesc"
+                android:layout_alignTop="@+id/tvRequestStat"
+                android:text="Delete"
+                android:onClick="deleteAdvertise"
+                android:visibility="invisible"/>
+
+
+        </android.widget.RelativeLayout>
+    </android.widget.RelativeLayout>
+
+</android.widget.RelativeLayout>

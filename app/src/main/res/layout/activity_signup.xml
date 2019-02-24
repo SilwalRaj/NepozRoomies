@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.widget.RelativeLayout
+        android:id="@+id/combo"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/ivProfilePic"
+            android:layout_width="102dp"
+            android:layout_height="95dp"
+            android:layout_alignStart="@+id/etEmailId"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="24dp"
+            android:background="#000000"
+            android:visibility="visible"
+            android:onClick="addImage"
+            app:srcCompat="@drawable/addicon" />
+
+        <RelativeLayout
+            android:layout_width="234dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="18dp"
+            android:layout_toRightOf="@id/ivProfilePic">
+
+
+            <EditText
+                android:id="@+id/etFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="14dp"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textPersonName" />
+        </RelativeLayout>
+    </android.widget.RelativeLayout>>
+
+    <EditText
+        android:id="@+id/etEmailId"
+        android:layout_width="354dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/combo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="email Id"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPhoneNo"
+        android:layout_width="354dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/etEmailId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone" />
+
+
+    <EditText
+        android:id="@+id/eTPassword"
+        android:layout_width="354dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/etPhoneNo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/eTconfirmPass"
+        android:layout_width="354dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/eTPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+
+
+
+    <Button
+        android:id="@+id/btnUserSignUp"
+        android:layout_width="128dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/eTconfirmPass"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="8dp"
+        android:onClick="clickRegister"
+        android:text="Sign Up" />
+
+
+
+
+</RelativeLayout>

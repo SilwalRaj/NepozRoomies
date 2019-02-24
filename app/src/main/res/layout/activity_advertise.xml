@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AdvertiseActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="543dp"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/eTUnitNo"
+            android:layout_width="94dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/etStreetName"
+            android:ems="10"
+            android:hint="Unit No."
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etHouseNo"
+            android:layout_width="142dp"
+            android:layout_height="45dp"
+            android:layout_alignEnd="@+id/etStreetName"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="House No."
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etStreetName"
+            android:layout_width="294dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62dp"
+            android:ems="10"
+            android:hint="Street Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etSuburbName"
+            android:layout_width="292dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="128dp"
+            android:ems="10"
+            android:hint="Suburb Name"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/iVUnit"
+            android:layout_width="83dp"
+            android:layout_height="80dp"
+            android:layout_alignEnd="@+id/etHouseNo"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="66dp"
+            android:background="@drawable/addicon"
+            android:onClick="addImage" />
+
+        <ImageView
+            android:id="@+id/iVUnit3"
+            android:layout_width="83dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/iVUnit"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/addicon"
+            android:onClick="addImage" />
+
+        <ImageView
+            android:id="@+id/iVUnit2"
+            android:layout_width="83dp"
+            android:layout_height="80dp"
+            android:layout_alignStart="@+id/eTUnitNo"
+            android:layout_alignTop="@+id/iVUnit"
+            android:background="@drawable/addicon"
+            android:onClick="addImage" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="addAdvPost"
+            android:text="Post" />
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="194dp"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="InspectionDate"/>
+
+        <EditText
+            android:id="@+id/eTDescription"
+            android:layout_width="292dp"
+            android:layout_height="99dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="180dp"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="textMultiLine" />
+
+    </RelativeLayout>
+</android.widget.RelativeLayout>

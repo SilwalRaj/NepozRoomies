@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/infobox"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="134dp"
+            android:layout_height="124dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="21dp"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/tvNamelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:layout_toRightOf="@id/ivProfile"
+            android:layout_marginStart="20dp"
+            android:text="Name :"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvNamelbl"
+            android:layout_marginStart="30dp"
+            android:layout_toRightOf="@id/tvNamelbl"
+            android:text="TextView"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvLoginidlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tvNamelbl"
+            android:layout_marginTop="71dp"
+            android:text="Login ID:"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvName"
+            android:layout_alignTop="@+id/tvLoginidlbl"
+            android:text="login"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvPhonelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvNamelbl"
+            android:layout_centerVertical="true"
+            android:text="Phone :"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/tvPhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvName"
+            android:layout_centerVertical="true"
+            android:text="phoneno"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvAddlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/tvNamelbl"
+            android:layout_marginBottom="74dp"
+            android:text="Address :"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvName"
+            android:layout_alignTop="@+id/tvAddlbl"
+            android:text="Address"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvEmailAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/ivProfile"
+            android:layout_marginBottom="35dp"
+            android:text="Email :"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/tvEmailAd"
+            android:layout_marginStart="78dp"
+            android:text="Email"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_alignTop="@+id/tvEmailAd"
+            android:onClick="EditBtnClick"
+            android:text="Edit Info"
+            android:textColor="#0182cc"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="333dp"
+        android:layout_below="@id/infobox"
+        android:layout_marginStart="22dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleViewUser"
+            android:layout_width="match_parent"
+            android:layout_height="317dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/searchLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
+    </RelativeLayout>
+
+
+
+
+</android.widget.RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F2F3F4"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:id="@+id/iVrequest"
+        android:layout_width="90dp"
+        android:layout_height="95dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/noimage" />
+
+    <RelativeLayout
+        android:id="@+id/tvlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iVrequest"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/iVrequest">
+
+        <TextView
+            android:id="@+id/tVUserDesc"
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="TextView"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tVFaddress"
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="38dp"
+            android:text="TextView"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvlayout"
+        android:layout_alignLeft="@+id/tvlayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Accept"
+            android:textColor="#2E86C1  " />
+
+        <Button
+            android:id="@+id/btnReject"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="61dp"
+            android:text="Reject"
+            android:textColor="#2E86C1  " />
+    </RelativeLayout>
+
+
+</RelativeLayout>
